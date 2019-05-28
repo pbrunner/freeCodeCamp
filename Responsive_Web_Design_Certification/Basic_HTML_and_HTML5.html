@@ -1,2 +1,41 @@
-<h1>Hello World</h1> #Say Hello to HTML Elements
-<h2>CatPhotoApp</h2> #Headline with the h2 Element
+<!DOCTYPE html> <!-- Declare the Doctype of an HTML Document -->
+<html>
+  <head> <!-- Define the Head and Body of an HTML Document -->
+    <title>Cats</title>
+  </head>
+  <body>
+    <h1>Hello World</h1> <!-- Say Hello to HTML Elements -->
+    <h2>CatPhotoApp</h2> <!-- Headline with the h2 Element -->
+    <a href="#footer">Jump to Bottom</a> <!-- Interal Sections of a Page with Anchor Elements -->
+    <main>
+      <div> <!-- Nest Many Elements within a Single div Element -->
+        <p>View more <a href="http://freecatphotoapp.com" target="_blank">cat Photos</a></p> <!-- External Pages with Anchor Elements, Anchor Element within a Paragraph -->
+        <a href="#" target="_blank">Dead link</a> <!-- Dead Links Using the Hash Symbol -->
+        <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="Kitty"></a> <!-- Images to Your Website, Image into a Link -->
+        <p>Hello Paragraph</p> <!-- Inform with the Paragraph Element -->
+        <p>Kitty ipsum dolor</p> <!-- Fill in the Blank with Placeholder Text -->
+        <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+        <ul> <!-- Bullet Unordered List -->
+          <li>Food</li>
+          <li>Birds</li>
+          <li>Sleeping</li>
+        </ul>
+        <ol> <!-- Ordered List -->
+          <li>Dogs</li>
+          <li>Other cats</li>
+          <li>Getting wet</li>
+        </ol>
+      </div>
+      <form action="/submit-cat-photo"> <!-- Form Element -->
+        <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" checked>Indoor</label> <!-- Create a Set of Radio Buttons, Check Radio Buttons and Checkboxes by Default -->
+        <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor">Outdoor</label><br>
+        <label><input type="checkbox" name="personality" checked> Loving</label> <!-- Create a Set of Checkboxes -->
+        <label><input type="checkbox" name="personality"> Lazy</label>
+        <label><input type="checkbox" name="personality"> Energetic</label><br>
+        <input type="text" placeholder="cat photo URL" required> <!-- Text Field, Placeholder Text to a Text Field, Use HTML5 to Require a Field -->
+        <button type="submit">Submit</button> <!-- Submit Button to a Form -->
+      </form>
+    </main> <!-- Introduction to HTML5 Elements -->
+    <footer id="footer">Copyright Cat Photo App</footer>
+  </body>
+</html>

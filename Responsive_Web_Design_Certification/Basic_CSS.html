@@ -1,0 +1,108 @@
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<!-- <style>
+  h2 {
+    color: blue;
+  }
+</style> <!-- Use CSS Selectors to Style Elements -->
+<!-- <h2 style="color: red;">CatPhotoApp</h2> Change the Color of Text -->
+<style>
+  .injected-text {
+  margin-bottom: -25px;
+  text-align: center;
+  }
+
+.box {
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  text-align: center;
+  }
+
+.yellow-box {
+  background-color: yellow;
+  padding: 10px;
+  }
+
+.red-box {
+  background-color: crimson;
+  color: #fff;
+  padding: 20px;
+  /* padding: 1.5em Understand Absolute versus Relative Units */
+  margin: 20px;
+  }
+
+.blue-box {
+  background-color: blue;
+  color: #fff;
+  padding: 20px; /* Adjust the Padding of an Element */
+  margin: 20px; /* Adjust the Margin of an Element */
+  /* margin: -15; Add Negative Margin to an Element */
+  padding-top: 40px; /* Add Different Padding to Each Side of an Element */
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  margin-top: 40px; /* Add Different Margins to Each Side of an Element */
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  /* padding: 40px 20px 20px 40px; Use Clockwise Notation to Specify the Padding of an Element */
+  /* margin: 40px 20px 20px 40px; Use Clockwise Notation to Specify the Margin of an Element */
+  }
+
+  .red-text {
+    color: red;
+  }
+  h2 {
+    font-family: Lobster, monospace; /* Import a Google Font, How Fonts Should Degrade */
+  }
+  p {
+    font-size: 16px; /* Change the Font Size of an Element */
+    font-family: monospace; /* Set the Font Family of an Element */
+  }
+  .smaller-image {
+    width: 100px; /* Size Your Images */
+  }
+
+  .thick-green-border {
+    border-color: green; /* Add Borders Around Your Elements */
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 10px; /* Add Rounded Corners with border-radius */
+    border-radius: 50%; /* Make Circular Images with a border-radius */
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+  }
+
+  #cat-photo-form {
+    background-color: green; /* Use an id Attribute to Style an Element */
+  }
+
+  [type="checkbox"] {
+    margin: 10px 0px 15px 0px; /* Use Attribute Selectos to Style Elements */
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>
+
+<h2 class="red-text">CatPhotoApp</h2> <!-- Use a CSS Class to Style an Element -->
+<p class="red-text">Click here to view more <a href="#">cat photos</a>.</p> <!-- Style Multiple Elements with a CSS Class -->
+<a href="#"><img src="https://bit.ly/fcc-relaxing-cat" class="smaller-image thick-green-border" alt="A cute orange cat lying on its back."></a>
+<div class="silver-background">
+</div>
+<form id="cat-photo-form" action="/submit-cat-photo"> <!-- Set the id of an Element -->
+  <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+  <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+  <label><input type="checkbox" name="personality" checked> Loving</label>
+  <label><input type="checkbox" name="personality"> Lazy</label>
+  <label><input type="checkbox" name="personality"> Energetic</label><br>
+  <input type="text" placeholder="cat photo URL" required>
+  <button type="submit">Submit</button>
+</form>

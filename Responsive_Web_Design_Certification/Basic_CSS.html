@@ -6,6 +6,14 @@
 </style> <!-- Use CSS Selectors to Style Elements -->
 <!-- <h2 style="color: red;">CatPhotoApp</h2> Change the Color of Text -->
 <style>
+  body {
+    /* background-color: black; Style the HTML Body Element  */
+    /* color: green; Inherit Styles from the Body Element
+    font-family: monospace; */
+    /* background-color: #000000 Use Hex Code for Specific Colors */
+    /* background-color: rgb(0,0,0); Use RGB Values to Color Elements */
+  }
+
   .injected-text {
   margin-bottom: -25px;
   text-align: center;
@@ -51,7 +59,30 @@
 
   .red-text {
     color: red;
+    /* color: #FF0000; Use Hex Code to Mix Colors */
+    /* color: #F00 Use Abbreviated Hex Code */
+    /* color: rgb(255,0,0); Use RGB to Mix Colors */
   }
+  .green-text {
+    color: #00FF00;
+    /* color: #0F0 */
+  }
+  .dodger-blue-text {
+    color: #1E90FF;
+  }
+  .fuchsia-text {
+    color: #F0F;
+  }
+  .cyan-text {
+    color: #0FF;
+  }
+  .orchid-text {
+    color: rgb(218,112,214);
+  }
+  .sienna-text {
+    color: rgb(160,82,45);
+  }
+
   h2 {
     font-family: Lobster, monospace; /* Import a Google Font, How Fonts Should Degrade */
   }
@@ -84,6 +115,20 @@
   [type="checkbox"] {
     margin: 10px 0px 15px 0px; /* Use Attribute Selectos to Style Elements */
   }
+
+  #orange-text {
+    /* color: orange; */
+    color: #FFA500;
+  }
+
+  .pink-text {
+    color: pink !important; /* Override All Other Styles by using Important */
+  }
+
+  .blue-text {
+    color: blue;
+    /* color: rgb(0,0,255); */
+  }
 </style>
 <h5 class="injected-text">margin</h5>
 
@@ -91,6 +136,24 @@
   <h5 class="box red-box">padding</h5>
   <h5 class="box blue-box">padding</h5>
 </div>
+
+<h1 class="pink-text blue-text" id="orange-text" style="color: white;">Hello World</h1> <!-- Prioritize One Style Over Another, Override Styles in Subsequent CSS, Override Class Declarations by Styling ID Attributes, Override Class Declarations with Inline Styles -->
+
+<h1 class="red-text">I am red!</h1>
+
+<h1 class="green-text">I am green!</h1>
+
+<h1 class="dodger-blue-text">I am dodger blue!</h1>
+
+<h1 class="orange-text">I am orange!</h1>
+
+<h1 class="fuchsia-text">I am fuchsia!</h1>
+
+<h1 class="cyan-text">I am cyan!</h1>
+
+<h1 class="orchid-text">I am orchid!</h1>
+
+<h1 class="sienna-text">I am sienna!</h1>
 
 <h2 class="red-text">CatPhotoApp</h2> <!-- Use a CSS Class to Style an Element -->
 <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p> <!-- Style Multiple Elements with a CSS Class -->

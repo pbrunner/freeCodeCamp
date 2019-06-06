@@ -1,0 +1,58 @@
+html {
+  font-family: 'Noto Sans HK', sans-serif;  
+}
+
+#main {
+  background-color: #efefef;
+  margin-bottom: 2em;
+}
+
+#title {
+  text-align: center;
+  padding-top: 1em;
+}
+
+#subtitle {
+  text-align: center;
+}
+
+#img-div {
+  text-align: center;
+  background-color: #fff;
+  margin: 0 1em 2em 1em;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+#img-caption {
+  padding-bottom: 1.5em;
+}
+
+#tribute-info {
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
+ul {
+  text-align: left;
+  margin-bottom: 2em;
+}
+
+li {
+  margin-bottom: 1em;
+}
+
+.primeMinisterQuote {
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 1em;
+}

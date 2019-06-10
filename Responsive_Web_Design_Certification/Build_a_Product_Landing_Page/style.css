@@ -1,0 +1,60 @@
+body {
+  background-color: #eaeaea;
+  font-family: 'Noto Sans HK', sans-serif;
+}
+
+#header {
+  position: fixed;
+  background-color: #eaeaea;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+}
+
+#logo {
+  display: inline-block;
+}
+
+#header-img {
+  width: 250px;
+  height: auto;
+}
+
+#headLinks {
+  display: inline-block;
+  float: right;
+  text-align: center;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: black;
+  margin-left: .7em;
+}
+
+#features {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.left {
+  display: inline-block;
+  text-align: right;
+  margin-right: 3em;
+  text-align: right;
+}
+
+i {
+  font-size: 40px;
+  color: orange;
+}
+
+.right {
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+}
+
+#video {
+  text-align: center;
+}

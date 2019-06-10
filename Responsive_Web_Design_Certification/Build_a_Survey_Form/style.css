@@ -1,0 +1,38 @@
+html {
+  font-family: 'Noto Sans HK', sans-serif;
+  background-color: #eec8ff;
+  margin: 0% 10% 5% 10%;
+}
+
+#title {
+  text-align: center;
+}
+
+#form {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+#description {
+  text-align: center;
+  padding-top: 1em;
+}
+
+#survey-form {
+  display: grid;
+  grid-template-rows: repeat(9, 10%);
+  text-align: center;
+}
+
+.row {
+  margin-bottom: 1em;
+}
+
+#submit {
+  background-color: #d881ff;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+}

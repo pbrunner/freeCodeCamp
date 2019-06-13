@@ -1,6 +1,8 @@
 body {
-  background-color: #eaeaea;
+/*   background-color: #eaeaea; */
+  background-color: #fff;
   font-family: 'Noto Sans HK', sans-serif;
+  margin: 2em 0 0 0;
 }
 
 #header {
@@ -8,12 +10,14 @@ body {
   background-color: #eaeaea;
   overflow: hidden;
   top: 0;
+  left: 0;
   width: 100%;
   height: 3em;
 }
 
 #logo {
   display: inline-block;
+  padding-top: 10px;
 }
 
 #header-img {
@@ -26,12 +30,14 @@ body {
   float: right;
   text-align: center;
   width: 25%;
+  padding-top: 10px;
 }
 
 #nav-bar a {
   text-decoration: none;
   color: black;
   margin-left: .7em;
+  vertical-align: middle;
 }
 
 #features {
@@ -57,14 +63,13 @@ i {
   width: 50%;
 }
 
-#video {
+#youtube {
   text-align: center;
   margin-bottom: 4em;
 }
 
 #pricing {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -73,7 +78,7 @@ i {
   border-width: 1px;
   border-color: black;
   border-radius: 5px;
-  width: 25%;
+  width: 300px;
   text-align: center;
   line-height: 1;
 }
@@ -113,4 +118,83 @@ button:hover {
 #submit {
   padding-top: 5px;
   padding-bottom: 5px;
+  border: none;
+  background-color: #ecc517;
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  margin: 1em 0 1em 0;
+  text-transform: uppercase;
+  transition-duration: 0.7s;
+  -webkit-transition-duration: 0.7s;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #d8d8d8;
+  height: 100%;
+  text-align: center;
+  padding: 1em 0 1em 0;
+}
+
+#footer-bar a {
+  text-decoration: none;
+  color: black;
+  margin: 0 12px 0 12px;
+}
+
+#copyright {
+  font-size: 14px;
+  color: #585858;
+  margin: .5em 0 0 0;
+}
+
+@media(max-width: 1000px) {
+  body {
+    margin-top: 6.5em;
+  }
+  #header {
+    height: auto;
+    padding-bottom: 14px;
+  }
+  #logo {
+    display: block;
+    text-align: center;
+  }
+  #headLinks {
+    float: none;
+    width: 100%;
+    padding-top: 0;
+  }
+  #nav-bar a {
+    display: block;
+    margin-left: 0;
+    vertical-align: none;
+  }
+}
+
+@media (max-width: 900px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .tromboneListing {
+    margin: 0 auto 1em auto;
+  }
+}
+
+
+@media(max-width: 600px) {
+  .left {
+    display: none;
+  }
+  .right {
+    text-align: center;
+    width: 95%;
+  }
+}
+
+@media(max-width: 560px) {
+  iframe {
+    width: 100%;
+    height: auto;
+  }
 }

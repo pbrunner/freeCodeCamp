@@ -3,8 +3,9 @@
 
   <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <title>Peter Brunner</title>
@@ -14,12 +15,12 @@
 
   <header id="header">
     <div id="logo">
-      <img id="header-img" alt="Orignal Trombones Logo" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png">
+    <img id="header-img" alt="Orignal Trombones Logo" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png">
     </div>
     <div id="headLinks">
       <nav id="nav-bar">
         <a href="#features" class="nav-link">Feature</a>
-        <a href="#video" class="nav-link">How It Works</a>
+        <a href="#youtube" class="nav-link">How It Works</a>
         <a href="#pricing" class="nav-link">Pricing</a>
       </nav>
     </div>
@@ -57,8 +58,8 @@
       </div>
     </section>
 
-    <section id="video">
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <section id="youtube">
+       <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     <section id="pricing">
@@ -100,7 +101,7 @@
       <form id="form" action="https://www.freecodecamp.com/email-submit">
         <input id="email" name="email" type="email" placeholder="Enter your email address" required>
         <br>
-        <button id="submit" type="submit"><strong>Get Started</strong></button>
+        <input id="submit" type="submit" value="Get Started">
       </form>
     </section>
 
@@ -112,7 +113,7 @@
       <a href="#">Terms</a>
       <a href="#">Contract</a>
     </nav>
-    <p>Copyright 2016, Original Trombones</p>
+    <p id="copyright">Copyright 2016, Original Trombones</p>
   </footer>
 
 </body>

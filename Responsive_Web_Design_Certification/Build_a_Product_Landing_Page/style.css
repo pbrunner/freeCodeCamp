@@ -9,6 +9,7 @@ body {
   overflow: hidden;
   top: 0;
   width: 100%;
+  height: 3em;
 }
 
 #logo {
@@ -24,6 +25,7 @@ body {
   display: inline-block;
   float: right;
   text-align: center;
+  width: 25%;
 }
 
 #nav-bar a {
@@ -57,4 +59,58 @@ i {
 
 #video {
   text-align: center;
+  margin-bottom: 4em;
+}
+
+#pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tromboneListing {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 5px;
+  width: 25%;
+  text-align: center;
+  line-height: 1;
+}
+
+.tromboneName {
+  margin-top: 0;
+  padding: 1em 0 1em 0;
+  background-color: #d8d8d8;
+  top: 0;
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  background-color: #ecc517;
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  margin: 1em 0 1em 0;
+  text-transform: uppercase;
+  transition-duration: 0.7s;
+  -webkit-transition-duration: 0.7s;
+}
+
+button:hover {
+  background-color: #eca517;
+}
+
+#emailSignUp {
+  text-align: center;
+}
+
+#email {
+  width: 250px;
+  height: 25px;
+}
+
+#submit {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }

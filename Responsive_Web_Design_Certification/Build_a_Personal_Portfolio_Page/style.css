@@ -1,0 +1,81 @@
+body {
+  margin: 0; 
+  font-family: 'Nunito', sans-serif;
+}
+
+#navbar {
+  background-color: #44e7c9;
+  height: 60px;
+  text-align: right;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#links {
+  padding: 16px 0 16px 0;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 16px 10px 16px 10px;
+  transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+}
+
+#navbar a:hover {
+  background-color: #e76544;
+  transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+}
+
+#welcome-section {
+  display: flex;
+  height: 100vh;
+  text-align: center;
+  background-color: #404040;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-message {
+  line-height: 5px;
+  font-size: 2em;
+}
+
+#welcome-message p {
+  color: #44e7c9 
+}
+
+.project-tile {
+  width: 400px;
+  height: auto;
+  text-align: center;
+  background-color: #404040;
+  border-radius: 3px;
+}
+
+.project-tile img {
+  width: 400px;
+  height: auto;
+}
+
+.project-tile p {
+  padding-bottom: 25px;
+  font-size: 20px;
+}
+
+.project-tile a {
+  color: white;
+  text-decoration: none;
+}
+
+.project-tile a:hover {
+  color: #e76544;
+  transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+}
+

@@ -1,6 +1,7 @@
 body {
-  margin: 0; 
+  margin: 0;
   font-family: 'Nunito', sans-serif;
+  background-color: #e76544;
 }
 
 #navbar {
@@ -50,22 +51,35 @@ body {
   color: #44e7c9 
 }
 
+#projects {
+  background-color: #e76544;
+  text-align: center;
+  margin-bottom: 1.3em;
+}
+
+#tiles {
+  display: flex;
+  flex-direction: row;
+  --span-color: #404040;
+}
+
 .project-tile {
   width: 400px;
-  height: auto;
+  height: 370px;
   text-align: center;
   background-color: #404040;
   border-radius: 3px;
+  margin: auto;
 }
 
 .project-tile img {
   width: 400px;
-  height: auto;
+  height: 300px;
 }
 
 .project-tile p {
-  padding-bottom: 25px;
   font-size: 20px;
+  line-height: 1em;
 }
 
 .project-tile a {
@@ -74,8 +88,92 @@ body {
 }
 
 .project-tile a:hover {
-  color: #e76544;
-  transition-duration: 0.1s;
-  -webkit-transition-duration: 0.1s;
+  --span-color: #e76544;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
 }
 
+.project-tile span {
+  color: var(--span-color);
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+}
+
+#contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #404040;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-message {
+  line-height: 10px;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+#contact-links a {
+  text-decoration: none;
+  color: white;
+  margin-right: 8px;
+  height: 500px;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+}
+
+#contact-links a:hover {
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  color: #44e7c9;
+}
+
+footer {
+  background-color: #e76544;
+  text-align: center;
+}
+
+#personal-site-link {
+  color: white;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+}
+
+#personal-site-link:hover {
+  color: #44e7c9;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+}
+
+@media(max-width: 1200px) {
+  #tiles {
+    display: initial;
+  }
+  .project-tile {
+    margin-top: 1.5em;
+  }
+}
+
+@media(max-width: 500px) {
+  #navbar {
+    text-align: center;
+  }
+  .project-tile {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .project-tile img {
+    width: 100%;
+    height: auto;
+  }
+  .project-tile p {
+   
+  }
+  #contact-message {
+    line-height: 1em;
+  }
+}
